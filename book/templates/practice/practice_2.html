@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block title %}Практическая работа 2{% endblock %}
+
+{% block H1 %}Практическая работа 2{% endblock %}
+
+{% block section1 %}
+<div class="card m-5">
+  <div class="card-body">
+    <p>
+      1. Откройте редактор кода.
+    </p>
+    <p>
+      2. Откройте ранее созданный проект mysite.
+    </p>
+    <p>
+      3. Запустите локальный сервер командой: python manage.py runserver.
+    </p>
+    <p>
+      4. Откройте файл mysite/settings.py.
+    </p>
+    <p>
+      5. Установите TIME_ZONE в свой часовой пояс.
+    </p>
+    <p>
+      6. Добавьте приложение polls в INSTALLED_APPS.
+    </p>
+    <p>
+      7. Сделайте первоначальные миграции командой: python manage.py migrate.
+    </p>
+    <p>
+      Команда migrate смотрит параметр INSTALLED_APPS и создает необходимые таблицы базы данных в соответствии с
+      настройками базы данных в вашем фале mysite/settings.py и миграциями базы данных.
+    </p>
+    <p>
+      8. Отредактируйте файл polls/models.py следующим образом:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_2_1.jpg">
+    </div>
+    <p>
+      Тут вы определяете модели, по сути структуру вашей базы данных. Данный код создает две модели: Question – содержит
+      вопрос и дату публикации. Choice – содержит два поля: текст выбора и подсчёт голосов. Каждый Choice связан с
+      Question.
+    </p>
+    <p>
+      9. Сообщите проекту, что установлено приложение polls, для этого добавьте строку polls.apps.PollsConfig в файл
+      mysite/settings.py:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 500px;" src="/static/images/prac_2_2.jpg">
+    </div>
+    <p>
+      10. Запустите команду python manage.py makemigrations polls для сообщения Django о внесении изменений в свои
+      модели. Вы должны увидеть что-то похожее на данный вывод:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 400px;" src="/static/images/prac_2_3.jpg">
+    </div>
+    <p>
+      11. Для проверки проблем в вашем проекте запустите команду: python manage.py check.
+    </p>
+    <p>
+      12. Теперь запустите python manage.py migrate для создания моделей в вашей базе данных:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_2_4.jpg">
+    </div>
+    <p>
+      13. Вызовите оболочку Python командой python manage.py shell. Вы получите следующий вывод:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_2_5.jpg">
+    </div>
+    <p>
+      14. Исправьте модель Question в файле polls/models.py и добавьте метод __str__() в оба Question и Choice:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 500px;" src="/static/images/prac_2_6.jpg">
+    </div>
+    <p>
+      15. Добавьте пользовательский метод к модели Questions следующим образом:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_2_7.jpg">
+    </div>
+    <p>
+      16. Сохраните изменения в проекте.
+    </p>
+    <p>
+      17. Запустите интерактивную оболочку Python командой python manage.py shell и посмотрите вывод.
+    </p>
+    <p>
+      18. Создайте пользователя с правами администратора командой python manage.py createsuperuser.
+    </p>
+    <p>
+      19. Введите желаемое имя и нажмите ввод.
+    </p>
+    <p>
+      20. Укажите email-адрес по вашему желанию.
+    </p>
+    <p>
+      21. Задайте пароль для администратора. Вводить его необходимо дважды для подтверждения пароля.
+    </p>
+    <p>
+      22. Выключите локальный сервер горячими клавишами ctrl+C.
+    </p>
+    <p>
+      23. Сохраните проект.
+    </p>
+    <p>
+      24. Выйдите из IDE.
+    </p>
+  </div>
+</div>
+{% endblock %}
+{% block section2 %}
+<div class="d-flex justify-content-around">
+  <a class="btn btn-primary acc-btn" href="{% url 'lection_4' %}">Назад</a>
+  <a class="btn btn-primary acc-btn" href="{% url 'index' %}">Главное меню</a>
+  <a class="btn btn-primary acc-btn" href="{% url 'lection_5' %}">Дальше</a>
+</div>
+{% endblock %}
+{% block section3 %}
+
+{% endblock %}

@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block title %}Практическая работа 3{% endblock %}
+
+{% block H1 %}Практическая работа 3{% endblock %}
+
+{% block section1 %}
+<div class="card m-5">
+  <div class="card-body">
+    <p>
+      1. Откройте редактор кода.
+    </p>
+    <p>
+      2. Откройте ранее созданный проект mysite.
+    </p>
+    <p>
+      3. Запустите локальный сервер командой: python manage.py runserver.
+    </p>
+    <p>
+      4. Откройте в браузере адрес http://127.0.0.1:8000/admin/
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 500px;" src="/static/images/prac_3_1.jpg">
+    </div>
+    <p>
+      5. Зайдите под созданным профилем администратора. Вы должны увидеть следующее:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_3_2.jpg">
+    </div>
+    <p>
+      6. Откройте файл polls/admin.py и отредактируйте его для добавления объектов Question в интерфейс администратора:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 400px;" src="/static/images/prac_3_3.jpg">
+    </div>
+    <p>
+      7. После регистрации Question обновите страницу http://127.0.0.1:8000/admin/. Вы должны увидеть следующие
+      изменения:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_3_4.jpg">
+    </div>
+    <p>
+      8. Нажмите на Questions и перейдите на страницу «Список изменений» для вопросов. При правильном выполнении вы
+      должны увидеть вопрос «Что случилось?» который мы добавляли в базу данных:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_3_5.jpg">
+    </div>
+    <p>
+      9. Нажмите на «What’s up?» для его редактирования:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_3_6.jpg">
+    </div>
+    <p>
+      10. Измените дату публикации, нажав на ярлыки «Сегодня и сейчас». Затем нажмите «сохранить и продолжить
+      редактирование».
+    </p>
+    <p>
+      11. Откройте вкладку «История» в правом верхнем углу. Вы должны увидеть следующее:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_3_7.jpg">
+    </div>
+    <p>
+      12. Теперь необходимо добавить несколько представлений в polls/views.py. Измените код в файле views.py следующим
+      образом:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_3_8.jpg">
+    </div>
+    <p>
+      13. Подключите новые представления в модуль polls.urls добавив новые patch() вызовы:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_3_9.jpg">
+    </div>
+    <p>
+      14. Перейдите в браузере по адресу http://127.0.0.1:8000/polls/34/. Он должен запустить метод detail() и
+      отобразить любой индентификатор который вы указывали в URL.
+    </p>
+    <p>
+      15. Попробуйте другие URL. Например «/polls/34/results/» и «/polls/34/vote/» они должны отобразить результаты и
+      страницы голосования.
+    </p>
+    <p>
+      16. Создайте каталог с именем templates в каталоге polls.
+    </p>
+    <p>
+      17. В каталоге templates создайте еще один каталог с именем polls.
+    </p>
+    <p>
+      18. Внутри каталога polls создайте файл с именем index.html.
+    </p>
+    <p>
+      19. Поместите данный код в файл index.html:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_3_10.jpg">
+    </div>
+    <p>
+      20. Обновите представление index в polls/views.py для использования шаблона:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_3_11.jpg">
+    </div>
+    <p>
+      21. Выключите локальный сервер горячими клавишами ctrl+C.
+    </p>
+    <p>
+      22. Сохраните проект.
+    </p>
+    <p>
+      23. Выйдите из IDE.
+    </p>
+  </div>
+</div>
+{% endblock %}
+{% block section2 %}
+<div class="d-flex justify-content-around">
+  <a class="btn btn-primary acc-btn" href="{% url 'lection_5' %}">Назад</a>
+  <a class="btn btn-primary acc-btn" href="{% url 'index' %}">Главное меню</a>
+  <a class="btn btn-primary acc-btn" href="{% url 'lection_6' %}">Дальше</a>
+</div>
+{% endblock %}
+{% block section3 %}
+
+{% endblock %}

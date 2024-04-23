@@ -1,0 +1,147 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-size: 200% 200%;
+  background-image: linear-gradient(-45deg, #9C9CFF 0%, #5F01B2 25%, #5555FF 51%, #FC00DA 100%);
+  -webkit-animation: AnimateBG 10s ease infinite;
+          animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.line {
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+}
+.line:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: black;
+	content: "";
+	transition: width 0.5s ease-out;
+}
+
+.line:hover:after,
+.line:focus:after {
+	width: 100%;
+}
+
+.card {
+  color: white;
+  border: none;
+  text-indent: 30px;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.accordion {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.acc-btn {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.acc-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.accordion-item, .accordion-button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+}
+
+.myimg {
+    height: auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.for-ul {
+    list-style-type: none;
+}
+
+/* Кнопка вверх*/
+
+.upvote-button {
+    opacity: 0.8;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: all .7s ease-in-out;
+    background: rgba(0, 0, 0, 0);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+}
+
+.upvote-button::before {
+    display: none;
+}
+
+

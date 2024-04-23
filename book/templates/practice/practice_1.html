@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block title %}Практическая работа 1{% endblock %}
+
+{% block H1 %}Практическая работа 1{% endblock %}
+
+{% block section1 %}
+<div class="card m-5">
+  <div class="card-body">
+    <p>
+      1. Установите Python: Если у вас еще не установлен Python, загрузите и установите его с официального сайта Python
+      (https://www.python.org/downloads/).
+    </p>
+    <p>
+      2. Откройте любой IDE редактор кода. Например VScode или PyCharm.
+    </p>
+    <p>
+      3. Установите Django: Откройте терминал или командную строку и выполните команду pip install django для установки
+      Django.
+    </p>
+    <p>
+      4. Проверьте установку Django: После установки выполните команду django-admin --version, чтобы убедиться, что
+      Django успешно установлен и вы видите версию.
+    </p>
+    <p>
+      5. Создайте новый каталог проекта: Создайте новую папку для вашего проекта Django.
+    </p>
+    <p>
+      6. Перейдите в созданный каталог: Откройте терминал или командную строку, перейдите в созданную вами папку с
+      помощью команды cd path/to/your/project.
+    </p>
+    <p>
+      7. Создайте виртуальную среду: Внутри вашего проекта создайте виртуальную среду с помощью команды python -m venv
+      myenv.
+    </p>
+    <p>
+      8. Активируйте виртуальную среду: Активируйте только что созданную виртуальную среду. На Windows используйте
+      myenv\Scripts\activate, а на Unix/Linux - source myenv/bin/activate.
+    </p>
+    <p>
+      9. Установите Django в виртуальной среде: Выполните команду pip install django в активированной виртуальной среде.
+    </p>
+    <p>
+      10. Создайте новый проект Django: В активированной виртуальной среде выполните команду django-admin startproject
+      mysite, где mysite - это название вашего проекта. Пример структуры после создания проекта:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 300px;" src="/static/images/prac_1_1.jpg">
+    </div>
+    <p>
+      11. Проверьте запуск проекта: Перейдите в каталог вашего нового проекта (cd myproject) и выполните команду python
+      manage.py runserver.
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_1_2.jpg">
+    </div>
+    <p>
+      12. Откройте браузер и перейдите по адресу http://127.0.0.1:8000/ чтобы убедиться, что ваш проект запустился
+      успешно.
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 600px;" src="/static/images/prac_1_3.jpg">
+    </div>
+    <p>
+      13. Создайте своё первое приложение командой python manage.py startapp polls. В результате будет создан каталог
+      polls, который будет выглядеть следующим образом:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 300px;" src="/static/images/prac_1_4.jpg">
+    </div>
+    <p>
+      14. Откройте файл polls/views.py и напишите следующий код:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_1_5.jpg">
+    </div>
+    <p>
+      Это самое простое представление возможное в Django. Для вызова данного представление необходимо сопоставить его с URL.
+    </p>
+    <p>
+      15. Для создания URLconf в каталоге polls создайте фал с именем urls.py. Каталог должен выглядеть следующим образом:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 300px;" src="/static/images/prac_1_6.jpg">
+    </div>
+    <p>
+      16. Добавьте в файл polls/urls.py следующий код:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_1_7.jpg">
+    </div>
+    <p>
+      17. Укажите URLconf  на модуль polls.urls в mysite/urls.py добавьте импорт django.urls.include.
+    </p>
+    <p>
+      18. Вставьте include() в список urlpatterns:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_1_8.jpg">
+    </div>
+    <p>
+      Функция include() позволяет ссылаться на другие URLconfs.
+    </p>
+    <p>
+      19. Убедитесь что представление index работает с помощью команды: python manage.py runserver.
+    </p>
+    <p>
+      20. Перейдите в браузере по адресу http://localhost:8000/polls/ и проверьте себя.
+    </p>
+    <p>
+      21. Выключите локальный сервер горячими клавишами ctrl+c.
+    </p>
+    <p>
+      22. Сохраните внесённые изменения в проекте.
+    </p>
+    <p>
+      23. Закройте редактор кода который вы используете.
+    </p>
+  </div>
+</div>
+{% endblock %}
+{% block section2 %}
+<div class="d-flex justify-content-around">
+  <a class="btn btn-primary acc-btn" href="{% url 'lection_2' %}">Назад</a>
+  <a class="btn btn-primary acc-btn" href="{% url 'index' %}">Главное меню</a>
+  <a class="btn btn-primary acc-btn" href="{% url 'lection_3' %}">Дальше</a>
+</div>
+{% endblock %}
+{% block section3 %}
+
+{% endblock %}

@@ -1,0 +1,204 @@
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="False" aria-controls="collapseOne">
+        Введение в Django: архитектура и основные концепции
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        В данной лекции мы узнаем о фреймворке Django - одном из самых популярных инструментов для разработки
+        веб-приложений
+        на языке Python. Django представляет собой мощный инструмент, позволяющий создавать веб-приложения быстро,
+        эффективно и с минимальным объемом кода. Давайте рассмотрим основные архитектурные принципы и концепции, лежащие
+        в основе Django.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'lection_1' %}">Открыть лекцию</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="False" aria-controls="collapseTwo">
+        Модели и базы данных в Django
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Базы данных являются неотъемлемой частью веб-приложений, и Django облегчает создание и взаимодействие с ними,
+        предоставляя удобные инструменты для работы с данными. В этой лекции мы рассмотрим основные концепции моделей
+        Django, такие как создание моделей, определение полей, связи между моделями и миграции базы данных. Также мы
+        обсудим различные типы полей, предоставляемые Django, и способы работы с данными с использованием ORM.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'lection_2' %}">Открыть лекцию</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="False" aria-controls="collapseThree">
+        Практическая работа 1
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        В данной практической работе вы узнаете, как установить необходимое программное обеспечение, настроить окружение
+        для разработки, создать базовый проект Django и запустить его на локальном сервере.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'practice_1' %}">Открыть работу</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+              aria-expanded="False" aria-controls="collapseFour">
+        Представления и шаблоны в Django
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        В данной лекции мы рассмотрим основные концепции представлений и шаблонов в Django. Мы узнаем, как создавать
+        представления для обработки запросов, как передавать данные из представлений в шаблоны, а также как использовать
+        шаблоны для генерации динамического контента на веб-страницах. Также мы обсудим механизмы наследования шаблонов
+        и использование тегов и фильтров для управления данными в шаблонах.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'lection_3' %}">Открыть лекцию</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+              aria-expanded="False" aria-controls="collapseFive">
+        Работа с URL-адресами и маршрутизацией в Django
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        В данной лекции мы рассмотрим основные концепции работы с URL-адресами и маршрутизации в Django. Мы узнаем,
+        как определять URL-шаблоны в URLconf файлах, как использовать регулярные выражения для точного сопоставления
+        URL-адресов, а также как передавать параметры из URL-адресов в представления для дальнейшей обработки. Также мы
+        обсудим преимущества и практические примеры использования именованных URL-шаблонов для обеспечения гибкости и
+        удобства в разработке.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'lection_4' %}">Открыть лекцию</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+              aria-expanded="False" aria-controls="collapseSix">
+        Практическая работа 2
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        В ходе данной работы вы познакомитесь с такими ключевыми моментами, создание моделей данных, выполнение миграций
+        базы данных, настройка административного интерфейса и многое другое. Каждый шаг будет сопровождаться подробным
+        описанием и необходимыми командами, что позволит нам успешно пройти через все этапы разработки.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'practice_2' %}">Открыть работу</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+              aria-expanded="False" aria-controls="collapseSeven">
+        Формы и обработка данных в Django
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        В данной лекции мы рассмотрим основные концепции работы с формами и обработкой данных в Django. Мы узнаем, как
+        создавать формы с помощью встроенных инструментов Django, как определять поля формы и их типы, а также как
+        обрабатывать данные, полученные от пользователей, с использованием представлений Django.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'lection_5' %}">Открыть лекцию</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+              aria-expanded="False" aria-controls="collapseEight">
+        Практическая работа 3
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Данная работа включает в себя настройку административной панели Django, создание представлений для отображения
+        данных и настройку URL-адресов, а также создание и использование шаблонов для отображения информации на
+        веб-страницах.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'practice_3' %}">Открыть работу</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine"
+              aria-expanded="False" aria-controls="collapseNine">
+        Аутентификация и авторизация пользователей в Django
+      </button>
+    </h2>
+    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        В этой лекции мы рассмотрим основные концепции аутентификации и авторизации пользователей в Django. Мы
+        узнаем, как использовать встроенные инструменты Django для аутентификации пользователей, такие как встроенные
+        формы аутентификации и система пользователей.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'lection_6' %}">Открыть лекцию</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen"
+              aria-expanded="False" aria-controls="collapseTen">
+        Практическая работа 4
+      </button>
+    </h2>
+    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Это задание влючает в себя настройку административной панели Django, направленное на эффективное управление
+        данными приложения. Так же вы научитесь создавать представления для отображения данных на веб-страницах и
+        создадите свои собственные стилизации для комфортного отображения данных.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'practice_4' %}">Открыть работу</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEleven"
+              aria-expanded="False" aria-controls="collapseEleven">
+        Итоговый тест
+      </button>
+    </h2>
+    <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Итоговая проверка знаний на освоенный материал.
+      </div>
+      <div class="d-grid col-3 mx-auto mb-3">
+        <a class="btn btn-primary acc-btn" href="{% url 'last_test' %}">Пройти тест</a>
+      </div>
+    </div>
+  </div>
+</div>

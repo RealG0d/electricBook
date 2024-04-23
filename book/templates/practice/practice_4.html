@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}Практическая работа 4{% endblock %}
+
+{% block H1 %}Практическая работа 4{% endblock %}
+
+{% block section1 %}
+<div class="card m-5">
+  <div class="card-body">
+    <p>
+      1. Откройте редактор кода.
+    </p>
+    <p>
+      2. Откройте ранее созданный проект mysite.
+    </p>
+    <p>
+      3. Запустите локальный сервер командой: python manage.py runserver.
+    </p>
+    <p>
+      4. Измените файл polls/views.py с использованием сокращения render(), следующим образом:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_4_1.jpg">
+    </div>
+    <p>
+      5. Создайте шаблон для опроса в каталоге polls. Назовите его detail.html и добавьте следующий код:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_4_2.jpg">
+    </div>
+    <p>
+      6. Создайте представление Django в файле polls/urls.py для обрабатывания отправленных данных:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 500px;" src="/static/images/prac_4_3.jpg">
+    </div>
+    <p>
+      7. Добавьте новый код в файл polls/views.py для реализации функции vote():
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 800px;" src="/static/images/prac_4_4.jpg">
+    </div>
+    <p>
+      8. Напишите представление voice() в файле polls/views.py которое перенаправляет на страницу результатов для
+      опроса:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_4_5.jpg">
+    </div>
+    <p>
+      9. Создайте шаблон polls/results.html для отображения результатов опроса:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_4_6.jpg">
+    </div>
+    <p>
+      10. Откройте polls/urls.py и измените его следующим образом:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_4_7.jpg">
+    </div>
+    <p>
+      11. Перейдите в файл polls/views.py и измените его следующим образом:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 600px;" src="/static/images/prac_4_8.jpg">
+    </div>
+    <p>
+      12. Создайте каталог static в каталоге polls.
+    </p>
+    <p>
+      13. Создайте файл style.css в каталоге static.
+    </p>
+    <p>
+      14. Напишите css стили для вашего сайта.
+    </p>
+    <p>
+      15. Добавьте теги для статических файлов в ваши html файлы для привязки стилей:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 600px;" src="/static/images/prac_4_9.jpg">
+    </div>
+    <p>
+      16. Откройте mysite/settings.py и добавьте параметры DIRS (TEMPLATES-DIRS) в настройку:
+    </p>
+    <div class="text-center">
+      <img class="myimg rounded" style="max-width: 700px;" src="/static/images/prac_4_10.jpg">
+    </div>
+    <p>
+      17. Продолжайте добавлять стили и изменять структуру ваших html файлов по вашему желанию.
+    </p>
+    <p>
+      18. Выключите локальный сервер горячими клавишами ctrl+C.
+    </p>
+    <p>
+      20. Сохраните проект.
+    </p>
+    <p>
+      21. Выйдите из IDE.
+    </p>
+  </div>
+</div>
+{% endblock %}
+{% block section2 %}
+<div class="d-flex justify-content-around">
+  <a class="btn btn-primary acc-btn" href="{% url 'lection_6' %}">Назад</a>
+  <a class="btn btn-primary acc-btn" href="{% url 'index' %}">Главное меню</a>
+  <a class="btn btn-primary acc-btn" href="{% url 'last_test' %}">Дальше</a>
+</div>
+{% endblock %}
+{% block section3 %}
+
+{% endblock %}

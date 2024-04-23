@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg">
+  <div class="container-fluid">
+    <i class="fa-solid fa-bookmark m-2" style="color: white;"></i>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{% url 'index' %}">Домашняя страница</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Лекции
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item line" href="{% url 'lection_1' %}">Лекция №1</a></li>
+            <li><a class="dropdown-item line" href="{% url 'lection_2' %}">Лекция №2</a></li>
+            <li><a class="dropdown-item line" href="{% url 'lection_3' %}">Лекция №3</a></li>
+            <li><a class="dropdown-item line" href="{% url 'lection_4' %}">Лекция №4</a></li>
+            <li><a class="dropdown-item line" href="{% url 'lection_5' %}">Лекция №5</a></li>
+            <li><a class="dropdown-item line" href="{% url 'lection_6' %}">Лекция №6</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Практические работы
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item line" href="{% url 'practice_1' %}">Практическая работа №1</a></li>
+            <li><a class="dropdown-item line" href="{% url 'practice_2' %}">Практическая работа №2</a></li>
+            <li><a class="dropdown-item line" href="{% url 'practice_3' %}">Практическая работа №3</a></li>
+            <li><a class="dropdown-item line" href="{% url 'practice_4' %}">Практическая работа №4</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{% url 'last_test' %}">Итоговый тест</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
